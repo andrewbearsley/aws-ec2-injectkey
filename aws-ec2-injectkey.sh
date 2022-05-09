@@ -3,8 +3,10 @@
 # Inject public key into AWS EC2 Linux running AWS Systems Manager, then SSH into machine
 
 # AWS EC2 Details
-export INSTANCEID=i-00c6e55a5f0271c62
-export INSTANCEIP=13.239.26.48
+#export INSTANCEID=i-00c6e55a5f0271c62
+#export INSTANCEIP=13.239.26.48
+export INSTANCEID=i-0f9cbd441127d4cd5
+export INSTANCEIP=54.252.215.12
 export INSTANCEOSUSER=ubuntu
 export AWSREGION=ap-southeast-2
 export AZZONE=ap-southeast-2a
