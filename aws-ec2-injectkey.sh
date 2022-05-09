@@ -23,5 +23,5 @@ ssh -i "$PEMKEY.pem" $INSTANCEOSUSER@$INSTANCEIP
 # Currently this fails with "ubuntu@13.239.26.48: Permission denied (publickey).""
 
 # Cleanup - delete key pair
-# aws ec2 delete-key-pair --key-name MyKeyPair --profile $AWSPROFILE 
+# aws ec2 delete-key-pair --key-name $PEMKEY --profile $AWSPROFILE 
 # yes | rm $PEMKEY.*
