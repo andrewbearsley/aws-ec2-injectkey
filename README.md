@@ -11,7 +11,7 @@ sh ./aws-ec2-injectkey.sh
 
 ## Clean up afterwards
 
-```
+```bash
 aws ec2 delete-key-pair --key-name $PEMKEY --profile $AWSPROFILE
 yes | rm $PEMKEY.*
 ```
