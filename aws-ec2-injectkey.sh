@@ -24,7 +24,7 @@ ssh-keygen -t rsa -f /tmp/$PEMKEY
 aws ec2-instance-connect send-ssh-public-key --instance-id $INSTANCEID --instance-os-user $INSTANCEOSUSER --region $AWSREGION --profile $AWSPROFILE --ssh-public-key "$(cat /tmp/${PEMKEY}.pub)" --availability-zone $AZZONE | jq
 
 # Connect to EC2
-ssh -i "$PEMKEY.pem" $INSTANCEOSUSER@$INSTANCEIP
+ssh -i "$PEMKEY" $INSTANCEOSUSER@$INSTANCEIP
 # Currently this fails with "ubuntu@13.239.26.48: Permission denied (publickey).""
 
 # Cleanup - delete key pair
