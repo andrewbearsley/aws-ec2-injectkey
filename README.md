@@ -5,13 +5,13 @@ Solution: Inject public ssh key into AWS ECS Linux running AWS Systems Manager, 
 
 ## Usage
 
-```
+```console
 sh ./aws-ec2-injectkey.sh
 ```
 
 ## Clean up afterwards
 
-```bash
+```console
 aws ec2 delete-key-pair --key-name $PEMKEY --profile $AWSPROFILE
 yes | rm $PEMKEY.*
 ```
