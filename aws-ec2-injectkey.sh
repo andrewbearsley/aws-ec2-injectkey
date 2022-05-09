@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Inject public key into AWS ECS Linux running AWS Systems Manager, then SSH into machine
+# Inject public key into AWS EC2 Linux running AWS Systems Manager, then SSH into machine
 
 # AWS EC2 Details
 export INSTANCEID=i-00c6e55a5f0271c62
