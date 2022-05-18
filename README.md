@@ -15,6 +15,3 @@ sh ./aws-ec2-injectkey.sh
 aws ec2 delete-key-pair --key-name $PEMKEY --profile $AWSPROFILE
 yes | rm $PEMKEY.*
 ```
-
-## TODO - Work in Progress
-The SSH logon does not yet work: it fails with `ubuntu@13.239.26.48: Permission denied (publickey).`
